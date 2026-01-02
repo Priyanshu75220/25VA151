@@ -30,6 +30,10 @@ body{
     height: 1.5rem;
     width: auto;
 }
+.-location{
+    display: flex;
+   cursor: pointer;
+}
 .-search{
     width: 40rem;
     background-color: white;
@@ -103,24 +107,48 @@ body{
     border: none;
     box-shadow: 0 2px 4px 0 gray;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; 
+}
+.container_banner_1>div>button:hover{
+    height: 45px;
+    width: 110px;
+    transition: 0.2ms;
+   margin-left: 10px;
 }
 .container_banner_2{
     display: grid; 
-    height: 220px;
+    height: 200px;
     grid-template-columns:repeat(4,1fr) ;
     gap:40px;
     padding: 50px;
+}
+.box>span{
+    margin-left: 20px;
+    font-size: 1.15rem;
+}
+.box>a{
+    margin-left: 20px;
+    font-size: 1.1rem;
+}
+.offer{
+   font-family: 'Courier New', Courier, monospace;
 }
 .box{
     display: flex;
     flex-direction: column;
     background-color: rgb(195, 202, 202);
     border-radius: 10px;
-    box-shadow: 0 2px 4px 0;
+    box-shadow: 0 0.5px 1px 0;
     font-size: 1.3rem;
     justify-content: center;
+    opacity: 1;
+    transition: opacity 0.2ms ease 0.3ms;
 }
+.box:hover{
+    opacity: 0.7;
+    
+}
+
 .box1{
 background-image: url(project-image-1/banner-21.jpg);
 
@@ -133,4 +161,38 @@ background-image: url(project-image-1/banner-23.jpg);
 }
 .box4{
     background-image: url(project-image-1/banner-24.jpg);
+}
+.shop_by_categories{
+   padding: 50px; 
+}
+.shop_by{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    height: 250px;
+    gap: 20px;
+}
+.shop{
+   
+    background-color: #f0f0f2;
+   border-radius: 10px;
+   padding: 10px;
+}
+.shop1{
+ padding: 10px;
+ gap: 10px;
+}
+.shop2{
+    display: flex;
+    justify-content: center;
+}
+.shop>.shop2>img{
+    height: 150px;
+}
+.categories{
+    font-size: 1.2rem;
+}
+.quantity{
+    font-size: 1.05rem;
+    font-family: robot;
+    color: #949494;
 }
